@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <header>
+        <div class="left" role="menu">
+            <!--<button class="menubar-btn" id="menu-btn"><i class="fas fa-bars"></i></button>-->
+            <h5>SNOT App</h5>
+        </div>
+        <div class="right">
+            <button class="menubar-btn" id="minimize-btn"><i class="fas fa-window-minimize"></i></button>
+            <button class="menubar-btn" id="max-unmax-btn"><i class="far fa-square"></i></button>
+            <button class="menubar-btn" id="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+    </header>
+    <link rel="stylesheet" href="assets/style.css">
+    <webview id="wv1" src="https://snot.fr/fr" partition="persist:webview" nodeintegration allowpopups></webview>
+    <div class="settings" id="settings-btn"><i class="fas fa-cog"></i></div>
+</body>
+
+<script src="main.js"></script>

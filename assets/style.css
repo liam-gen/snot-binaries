@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+webview{
+    width: 100%;
+    height: calc(100% - 30px)
+}
+
+.settings{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99;
+    border-radius: 1rem;
+    padding: 10px;
+    background: rgba(93, 92, 92, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(93, 92, 92, 0.3);
+}
+
+.settings i{
+    color: white !important;
+    transition: all 1s ease-in-out;
+    font-size: 30px;
+}
+
+.settings:hover i{
+    transform: rotate(360deg);
+}
+
+header{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    background: #34475a;
+    -webkit-app-region: drag;
+  }
+  
+  header > div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h5{
+    margin-left: 10px
+  }
+  
+  .menubar-btn {
+    -webkit-app-region: no-drag;
+  }
+  
+  button {
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  
+  button:hover {
+    background: rgba(221, 221, 221, 0.2);
+  }
+  
+  #close-btn:hover {
+    background: rgb(255, 0, 0);
+  }
+  
+  button i {
+    color: white;
+  }
